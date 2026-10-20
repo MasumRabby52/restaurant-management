@@ -17,6 +17,12 @@ func GetOrderItem(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
+func GetOrderItemsByOrder(pool *pgxpool.Pool) gin.HandlerFunc {
+	return func(c *gin.Context) {
+
+	}
+}
+
 func CreateOrderItem(pool *pgxpool.Pool) gin.HandlerFunc {
 	return func(c *gin.Context) {
 

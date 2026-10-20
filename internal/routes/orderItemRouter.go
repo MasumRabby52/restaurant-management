@@ -10,6 +10,7 @@ import (
 func OrderItemRoutes(router *gin.Engine, pool *pgxpool.Pool) {
 	router.GET("/orderItems", controllers.GetOrderItems(pool))
 	router.GET("/orderItems/:orderItem_id", controllers.GetOrderItem(pool))
+	router.GET("/orderItems-order/:order_id", controllers.GetOrderItemsByOrder(pool))
 	router.POST("/orderItems/:orderItem_id", controllers.CreateOrderItem(pool))
 	router.PATCH("/orderItems/:orderItem_id", controllers.UpdateOrderItem(pool))
 }
