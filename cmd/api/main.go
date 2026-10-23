@@ -39,7 +39,8 @@ func main() {
 		})
 	})
 
-	routes.UserRoutes(router, pool)
+	routes.UserRoutes(router, pool, cfg)
+
 	routes.FoodRoutes(router, pool)
 	routes.MenuRoutes(router, pool)
 	routes.TableRoutes(router, pool)

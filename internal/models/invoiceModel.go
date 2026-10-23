@@ -3,7 +3,6 @@ package models
 import "time"
 
 type Invoice struct {
-	ID               string    `json:"id" db:"id"`
 	Invoice_id       string    `json:"invoice_id" db:"invoice_id"`
 	Order_id         string    `json:"order_id" db:"order_id"`
 	PaymentMethod    string    `json:"payment_method" db:"payment_method" binding:"required,oneof=CARD CASH"`

@@ -3,7 +3,6 @@ package models
 import "time"
 
 type Menu struct {
-	ID         string    `json:"id" db:"id"`
 	Name       string    `json:"name" db:"name"`
 	Category   string    `json:"category" db:"category" binding:"required"`
 	Start_Date time.Time `json:"start_date" db:"start_date"`

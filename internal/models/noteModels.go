@@ -3,7 +3,6 @@ package models
 import "time"
 
 type Note struct {
-	ID         string    `json:"id" db:"id"`
 	Text       string    `json:"text" db:"text"`
 	Title      string    `json:"title" db:"title"`
 	Created_at time.Time `json:"created_at" db:"created_at"`

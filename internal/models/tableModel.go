@@ -3,7 +3,6 @@ package models
 import "time"
 
 type Table struct {
-	ID               string    `json:"id" db:"id"`
 	Number_of_guests int       `json:"number_of_guests" db:"number_of_guests"`
 	Table_number     int       `json:"table_number" db:"table_number"`
 	Created_at       time.Time `json:"created_at" db:"created_at"`
